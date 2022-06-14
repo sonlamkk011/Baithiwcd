@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>AddPhoneServlet</servlet-name>
+        <servlet-class>com.example.baithiasm.controller.AddPhoneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPhoneServlet</servlet-name>
+        <url-pattern>/phone/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeletePhoneServlet</servlet-name>
+        <servlet-class>com.example.baithiasm.controller.DeletePhoneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePhoneServlet</servlet-name>
+        <url-pattern>/phone/delete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListPhoneServlet</servlet-name>
+        <servlet-class>com.example.baithiasm.controller.ListPhoneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListPhoneServlet</servlet-name>
+        <url-pattern>/phone/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdatePhoneServlet</servlet-name>
+        <servlet-class>com.example.baithiasm.controller.UpdatePhoneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdatePhoneServlet</servlet-name>
+        <url-pattern>/phone/update</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
